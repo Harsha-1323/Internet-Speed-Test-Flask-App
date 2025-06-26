@@ -1,0 +1,6 @@
+# Build and Eun Docker Container
+docker build -t internet-speed-test .
+docker run -d -p -5000:5000 internet-speed-test
+
+# Then go to your instant
+     http://localhost:5000
