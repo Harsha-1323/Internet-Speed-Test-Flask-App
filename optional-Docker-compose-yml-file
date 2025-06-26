@@ -1,0 +1,11 @@
+# docker-copmose.yml
+version: '3'
+services:
+  speedtest:
+    build:
+    port:
+      - "5000:5000"
+
+
+Run:
+docker-compose up --build
