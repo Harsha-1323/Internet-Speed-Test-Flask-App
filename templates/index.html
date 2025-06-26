@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internet Speed Test</title>
+</head>
+<body>
+    <h2>Internet Speed Test</h2>
+    <button onclick="runSpeedTest()">Run Speed Test</button>
+    <p id="results"></p>
+
+    <script>
+        function runSpeedTest() {
+            document.getElementById("results").innerText = "Testing...";
+            fetch('/speedtest')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("results").innerText =
+                        `Download: ${data.download} Mbps\nUpload: ${data.upload} Mbps\nPing: ${data.ping} ms`;
+                });
+        }
+    </script>
+</body>
+</html>
