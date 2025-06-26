@@ -1,0 +1,5 @@
+internet-speed-test/
+|-- app.py
+|-- requirements.txt
+'-- templates/
+  '--- index.html
