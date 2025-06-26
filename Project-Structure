@@ -1,5 +1,8 @@
-internet-speed-test/
-|-- app.py
-|-- requirements.txt
-'-- templates/
-  '--- index.html
+internet-speed-app/
+├── app.py
+├── requirements.txt
+├── templates/
+│   └── index.html
+├── Dockerfile
+└── docker-compose.yml (optional)
+
