@@ -1,2 +1,2 @@
-Flask
-speedtest-cli
+Flask==2.3.2
+speedtest-cli==2.1.3
